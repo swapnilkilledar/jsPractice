@@ -123,7 +123,7 @@ var newString = string.replace(/swapnil/g, "karna")
   var impNum = (number*6)+1;
   var numOfStar = Math.round(impNum)
   console.log(numOfStar)
-  */
+  
 
 
   // convert string in to numbers & decimals
@@ -153,3 +153,52 @@ var newString = string.replace(/swapnil/g, "karna")
   var nameOfToday = dayNames[theDay];
   console.log(nameOfToday)
   
+
+  // diff in time
+var today = new Date()
+var doomsDay = new Date ("August 15 ,2022")
+
+var mstoday= today.getTime()
+var doomTime = doomsDay.getTime()
+
+var diff = mstoday-doomsDay
+
+var dif = diff/ (1000 * 60 * 60 * 24);
+
+var dif = Math.floor(dif)
+console.log(dif)
+
+
+// passing back data
+function calcTot(merchTot) {
+var orderTot;
+if (merchTot >= 100) {
+orderTot = merchTot;
+}
+else if (merchTot < 50.01) {
+ orderTot = merchTot + 5;
+ }
+ else {
+ orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+ }
+ return orderTot;
+ }
+ var orederTot = calcTot(20);
+ console.log(totalToCharge)*/
+
+
+ //switch statement
+  var dayOfWk;
+  switch(dayOfWk) {
+   case "Sat" :
+  console.log("Whoopee");
+   break;
+   case "Sun" :
+   console.log("Whoopee");
+   break;
+   case "Fri" :
+   console.log("TGIF!");
+   break;
+   default :
+   console.log("Shoot me now!");
+   }

@@ -1,0 +1,220 @@
+
+//Write a function to filter given array with numbers greater than 10
+
+let numArray =[1,5,9,7,11,15,18,19];
+function numGrtThanTen (numArray) {
+   return numArray > 10
+   }
+function result() {
+   let newArray = numArray.filter(numGrtThanTen)
+   console.log(newArray)
+}
+result()
+
+
+//Write a function to filter given array with numbers less than 10
+
+function numLessThanTen(numArray) {
+   return numArray < 10
+   }
+function result2(){
+   let newlessArray =numArray.filter(numLessThanTen)
+   console.log(newlessArray)
+}
+result2()
+
+//Write a function to check if given input is prime or not
+
+
+
+
+
+
+
+
+//Write a function to filter given array with prime numbers only
+function primeArray(numArray) {
+   return numArray 
+
+}
+
+
+
+//Write a function to return two arrays from given input array, one with even numbers and second with odd numbers
+
+function evenOddArray() {
+   var numbers = [1,2,5,6,7,8,9,11,12,15,16,18]
+   var evenArray = []
+   var oddArray = []
+   var i;
+   for(i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 === 0) {
+      evenArray.push(numbers[i])
+      } else {
+         oddArray.push(numbers[i])
+      }    
+   }
+      console.log(evenArray)
+      console.log(oddArray)
+}
+evenOddArray()
+
+//Write a function to return array with squares of each element input => [2, 4, 5], output => [4, 16, 25]
+
+function squareOfArray() {
+   array = [2,4,6]
+   sqArray = []
+   var i;
+      for(i=0;i< array.length ;i++)
+         //var sqr = Math.pow(array[i])
+         sqArray.push(array[i]*array[i])
+         console.log(sqArray)
+}
+squareOfArray()
+
+//Write a function to return array with square roots of each element input => [4, 16, 25], output => [2, 4, 5]
+
+function squareRootArray() {
+   let arr = [4,16,25];
+   sqRootArray = []
+   var i;
+      for (i=0; i < arr.length ; i++)
+         //root = Math.sqrt(arr[i])
+         sqRootArray.push(Math.sqrt(arr[i]))
+         console.log(sqRootArray)
+}
+squareRootArray()
+
+
+//Write a function to check if given input string is palindrome or not
+
+function palindromeString() {
+   var string = "madam"
+
+   var arraystring = string.split('')
+   console.log(arraystring)
+
+   var reverseArraystring = arraystring.reverse()
+   console.log(reverseArraystring)
+
+   var reverseString = reverseArraystring.join('')
+   console.log(reverseString)
+
+      if(string === reverseString){
+         console.log("palindrome")
+      }else{
+         console.log("not a palindrome")
+      }
+}
+palindromeString()
+
+//Write a function to return reversed input string 
+
+function reverseString() {
+   var string ="swapnil"
+
+   let arrString = string.split('')
+   var reverseArrString = arrString.reverse();
+   console.log(reverseArrString)
+
+   var reverString = reverseArrString.join('')
+   console.log(reverString)
+
+}
+reverseString()
+
+
+//Write a function to return reversed input number
+
+function reverseNumber() {
+var number =123456789;
+
+var numberString = number.toString()
+console.log(numberString)
+
+var arrNumberString = numberString.split('')
+console.log(arrNumberString)
+
+var reverseArrNumberString = arrNumberString.reverse()
+console.log(reverseArrNumberString)
+
+var reverseNumberString = reverseArrNumberString.join('')
+console.log(reverseNumberString)
+
+var reversenum = parseInt(reverseNumberString)
+console.log(reversenum)
+
+} 
+reverseNumber()
+
+
+//Write a function to sort input array, input => [10, 5, 15, 4], output => [4,5, 10, 15]
+
+function sortArray() {
+   let arr=[10,5,15,4]
+   let newArr =[]
+   var a;
+      for (var i = 0; i < arr.length; i++){
+         for(var j = i+1; j < arr.length; j++)
+            if(arr[i] > arr[j]){
+               a = arr[i]
+               arr[i] = arr[j]
+               arr[j] = a 
+            }
+         }
+         console.log(arr)
+}
+sortArray()
+
+
+//Write a function to calculate the area of circle, input is radius of circle 
+
+function areaOfCircle() {
+   let radious = 15
+   const pi = 3.14
+   let area = 2*pi*radious
+   console.log(area)
+}
+areaOfCircle()
+
+
+//Write a function to calculate the area of rectangle, input is width and height
+
+function areaOfRectangle() {
+   let width = 10;
+   let height = 20;
+   let area = width*height
+   console.log(area)
+}
+areaOfRectangle()
+
+
+//Write a function to calculate the area of square, input is width
+
+function areaOfSquare() {
+   let width = 10
+   area = width*width
+   console.log(area)
+}
+areaOfSquare()
+
+
+//Write a function to calculate age from date of birth, input is date of birth. Output should contain number of years, months and days
+function age() {
+var dob = new Date("08/15/1990");  
+    //calculate month difference from current date in time  
+    var month_diff = Date.now() - dob.getTime();  
+      
+    //convert the calculated difference in date format  
+    var age_dt = new Date(month_diff);   
+      
+    //extract year from date      
+    var year = age_dt.getUTCFullYear();  
+      
+    //now calculate the age of the user  
+    var age = Math.abs(year - 1970);  
+      
+    //display the calculated age  
+    console.log("Age of the date entered: " + age + " years");  
+}
+age()

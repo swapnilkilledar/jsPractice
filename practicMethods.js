@@ -105,6 +105,4 @@ console.log(total)
  console.log(theDay)
 
 
- // day name
-
-
+ 
